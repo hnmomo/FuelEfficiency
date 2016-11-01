@@ -16,7 +16,9 @@ public class Motorcycle extends Vehicle{
      * pre:none
      * post:create a motorcycle object
      */
-    public Motorcycle(){}
+    public Motorcycle(int s){
+        super(s);
+    }
     /**calculate distance
      * pre:none
      * post:return the distance

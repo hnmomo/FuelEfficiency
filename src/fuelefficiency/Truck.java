@@ -16,7 +16,9 @@ public class Truck extends Vehicle{
      * pre:none
      * post:create a truck object
      */
-    public Truck(){}
+    public Truck(int s){
+        super(s);
+    }
     /**calculate distance
      * pre:none
      * post:return the distance

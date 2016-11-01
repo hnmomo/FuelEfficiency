@@ -16,7 +16,9 @@ public class HybridCar extends Vehicle{
      * pre:none
      * post:create a hybridcar object
      */
-    public HybridCar(){}
+    public HybridCar(int s){
+        super(s);
+    }
     /**calculate distance
      * pre:none
      * post:return the distance

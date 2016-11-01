@@ -33,23 +33,26 @@ public class FuelEfficiency {
             if(choice>0&&choice<5){
                 System.out.println("how much fuel do you have?");
                 fuel=in.nextDouble();
+                System.out.println("what's the speed of your vehicle?");
+                int s=in.nextInt();
                 switch(choice){
                     case 1:
-                        veh=new Truck();
+                        veh=new Truck(s);
                         break;
                     case 2:
-                        veh=new Car();
+                        veh=new Car(s);
                         break;
                     case 3:
-                        veh=new HybridCar();
+                        veh=new HybridCar(s);
                         break;
                     case 4:
-                        veh=new Motorcycle();
+                        veh=new Motorcycle(s);
                         break;
                     default:
-                        veh=new Truck();
+                        veh=new Truck(s);
                 }
-                System.out.println("your vehicle runs "+veh.getDistance(fuel)+"km");
+                System.out.println("your vehicle runs "+veh.getDistance(fuel)+"km\n"
+                        +veh.getSpeed());
             }
         }while(choice!=0);
     }
