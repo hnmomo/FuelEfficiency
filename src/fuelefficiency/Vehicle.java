@@ -11,6 +11,14 @@ package fuelefficiency;
  * @author jihua5758
  */
 public abstract class Vehicle {
+    /**constructor
+     * pre:none
+     * post:create a vehicle object
+     */
     public Vehicle(){}
+    /**calculate distance
+     * pre:none
+     * post:return the distance
+     */
     public abstract double getDistance(double fule);
 }

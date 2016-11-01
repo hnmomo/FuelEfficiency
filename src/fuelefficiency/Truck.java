@@ -12,7 +12,15 @@ package fuelefficiency;
  */
 public class Truck extends Vehicle{
     private static final double efficiency=14.1/100;
+    /**constructor
+     * pre:none
+     * post:create a truck object
+     */
     public Truck(){}
+    /**calculate distance
+     * pre:none
+     * post:return the distance
+     */
     public double getDistance(double fuel){
         return fuel/efficiency;
     }
