@@ -24,7 +24,7 @@ public abstract class Vehicle {
      * post:return the distance
      */
     public abstract double getDistance(double fule);
-    /**comment your speed
+    /**comment on your speed
      * pre:none
      * post:return fast if the speed is greater than 100
      */
